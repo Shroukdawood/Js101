@@ -23,11 +23,36 @@
 <section>
     <h1>Registration</h1>
 </section>
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+    <form id="registration" action="registration.html">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" name="userEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" name="userPassword" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">
+          <input name="personalImage" type="file"  class="form-input" >
+        </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    </div>
+    </div>
+</section>
     </main>
     <footer>
         <p> &copy;copyright reserved -2024 </p>
     </footer>
     <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
-    <script src="jscod/registration.js"></script>
+    <script src="assets/jscod/registration.js" type="module"></script>
 </body>
 </html>
