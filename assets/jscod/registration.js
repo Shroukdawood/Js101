@@ -32,6 +32,18 @@ regformInput.forEach((input) => {
         { 
             console.log("password not valid");
         errorMassage.innerHTML ="password not valid";
+        }  
+        if (this.name ==="personalImage" && !this.files[0].type.includes("image"))
+        { 
+            console.log(this.files[0]);
+        errorMassage.innerHTML ="image not valid";
+        } else{
+            const displayImage =document.querySelector("#display-personalImage")
+            const reader = new FileReader();
+            reader.readAsDataURL(this.files[0]);
+            reader.onload = (e) => {
+              displayImage.src = e.target.result;  
+            }
         }   
     });
 });
